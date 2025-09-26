@@ -1,0 +1,36 @@
+body{
+    background-image: url("../img/computador.jpg");
+    background-repeat: no-repeat;
+}
+
+.empresa {
+  color: brown;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.ramo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 6px;
+  word-spacing: 8px;
+  text-align: justify;
+}
+
+h2{
+    border: thin aqua solid;
+}
+
+a{
+    border: thick dashed red;
+    border-bottom: 5px dotted green;
+}
+
+p{
+    width: 250px;
+    height: 250px;
+    border: 5px dotted black;
+    border-radius: 30px 10px 50px 40px;
+}

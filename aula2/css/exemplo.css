@@ -1,0 +1,33 @@
+body{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.texto1, .texto2, .texto3{
+    text-align: justify;
+    width: 600px;
+    border: 6px solid green;
+    background-color: gray;
+    margin: 10px;
+    /* padding: 20px 60px;
+    padding-left: 100px;
+    margin: 0px; */
+}
+
+.texto3{
+    background-color: blue;
+    height: 30px;
+    
+}
+
+.texto1{
+    border: 10px solid blue;
+    padding: 30px;
+}
+
+.texto2{
+    box-sizing: border-box;
+    border: 10px solid orange;
+    padding: 30px;
+}
