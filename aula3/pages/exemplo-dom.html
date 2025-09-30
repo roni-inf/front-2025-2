@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="texto">Front-End Essential</p>
+    <div id="caixa">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+    </div>
+
+    <script>
+      //   document.getElementById("texto").style.color = "blue";
+      //   document.getElementById("texto").style.fontSize = "48px";
+      let texto = document.getElementById("texto");
+      texto.style.border = "1px solid green";
+      texto.style.fontSize = "48px";
+
+      let caixa = document.getElementById("caixa");
+      caixa.style.border = "1px solid #373737";
+      caixa.style.width = "300px";
+      caixa.style.height = "300px";
+      caixa.style.backgroundColor = "gray";
+
+      document.getElementById("texto").innerHTML = "Java Script";
+
+
+    </script>
+  </body>
+</html>

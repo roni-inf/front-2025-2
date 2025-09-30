@@ -1,0 +1,36 @@
+body {
+  font-size: 32px;
+}
+
+.empresa {
+  background-color: blue;
+}
+
+.area {
+  display: block;
+  height: 100px;
+  width: 200px;
+  background-color: red;
+}
+
+.celulares {
+  background-color: brown;
+}
+
+.eletronicos {
+  background-color: purple;
+}
+
+.computadores {
+  display: inline-block;
+  height: 200px;
+  width: 300px;
+  background-color: cyan;
+}
+
+.roteadores {
+  display: inline-block;
+  height: 200px;
+  width: 300px;
+  background-color: yellow;
+}
