@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback</title>
+  </head>
+  <body>
+    <script>
+    //   const saudacao = (nome) => alert(`Olá ${nome}`);
+
+    //   const processamentoEntrada = (callback) => {
+    //     const nome = prompt("Preencha o nome:");
+    //     callback(nome);
+    //   };
+
+    //   processamentoEntrada(saudacao);
+
+      const somar = (a, b) => a + b;
+
+      const calcular = (a, b, callback) => {
+        return callback(a, b);
+      };
+
+      document.write(`O resultado da soma é: ${calcular(100, 50, somar)}`)
+      
+    </script>
+  </body>
+</html>

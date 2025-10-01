@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+    <link rel="stylesheet" href="../css/eventos.css" />
+  </head>
+  <body>
+    <div
+      id="caixa"
+      onmouseover="alterarCor(this,'yellow')"
+      onmouseout="alterarCor(this,'blue')"
+    ></div>
+    <button
+      type="reset"
+      onmouseover="alterarCor(document.getElementById('caixa'),'#f23')"
+    >
+      Enviar
+    </button>
+
+    <script>
+      //   function alterarCor(obj, cor) {
+      //     obj.style.backgroundColor = cor;
+      //   }
+
+      const alterarCor = function (obj, cor) {
+        obj.style.backgroundColor = cor;
+      };
+    </script>
+  </body>
+</html>

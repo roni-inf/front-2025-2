@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício</title>
+  </head>
+  <body>
+    <!-- Faça um programa que pegue o horário atual e dê Bom dia, se a hora estiver entre 4h e 12h, Boa tarde de estiver entre 12h01 e 17h59, Boa noite se a hora estiver entre 18h e 00h00 -->
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+
+    <p id="mensagem"></p>
+
+    <script>
+      const agora = new Date();
+      const hora = agora.getHours();
+      const minuto = agora.getMinutes().toString().padStart(2, "0");
+
+      const saudacao =
+        hora >= 4 && hora <= 12
+          ? "Bom dia"
+          : hora >= 13 && hora <= 17
+          ? "Boa tarde"
+          : (hora >= 18 && hora <= 23) || hora === 0
+          ? "Boa noite"
+          : "Boa madrugada";
+
+      const inputNome = document.getElementById("nome");
+      const mensagem = document.getElementById("mensagem");
+
+      inputNome.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          const nome = inputNome.value.trim();
+          if (nome) {
+            mensagem.innerHTML = `${saudacao}, ${nome}! Agora são ${hora}:${minuto}.`;
+          } else {
+            mensagem.innerHTML = "Por favor, digite seu nome.";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
+
