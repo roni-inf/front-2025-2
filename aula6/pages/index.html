@@ -12,7 +12,19 @@
   <body>
     <header class="layout-cabecalho layout-cabecalho--fixo">
       <div class="container">
-        <img src="../img/cabecalho.png" alt="Internet" width="80px" />
+        <nav class="navegacao">
+          <img src="../img/cabecalho.png" alt="Internet" width="80px" />
+          <div class="navegacao__menu">
+            <button class="botao--chaveador js-botao--chaveador"></button>
+
+            <ul class="menu js-menu">
+              <li class="menu__item"><a href="#">Como Funciona</a></li>
+              <li class="menu__item"><a href="#">Plano e Preços</a></li>
+              <li class="menu__item"><a href="#">Contato</a></li>
+              <li class="menu__item"><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -81,7 +93,7 @@
               </footer>
             </article>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 ultima-coluna">
             <article class="plano">
               <h2 class="plano__cabecalho">Plano Avançado</h2>
               <div class="plano__preco">R$199,90/mês</div>
@@ -107,5 +119,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="../js/app.js"></script>
   </body>
 </html>
